@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.service.Controller">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="640.0" fitWidth="154.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="productTableView" layoutX="152.0" layoutY="117.0" prefHeight="406.0" prefWidth="889.0" />
+      <Button fx:id="deleteButton" layoutX="767.0" layoutY="576.0" mnemonicParsing="false" onAction="#setDeleteButton" prefHeight="26.0" prefWidth="136.0" text="Удалить" />
+      <TextField fx:id="idTextField" layoutX="15.0" layoutY="205.0" prefHeight="26.0" prefWidth="122.0" promptText="Номер" />
+      <TextField fx:id="sectionTextField" layoutX="14.0" layoutY="240.0" prefHeight="26.0" prefWidth="122.0" promptText="Раздел" />
+      <TextField fx:id="itemTextField" layoutX="15.0" layoutY="275.0" prefHeight="26.0" prefWidth="122.0" promptText="Название" />
+      <TextField fx:id="avTextField" layoutX="15.0" layoutY="310.0" prefHeight="26.0" prefWidth="122.0" promptText="В наличии" />
+      <TextField fx:id="startTextField" layoutX="14.0" layoutY="345.0" prefHeight="26.0" prefWidth="122.0" promptText="Цена" />
+      <TextField fx:id="finishTextField" layoutX="14.0" layoutY="380.0" prefHeight="26.0" prefWidth="122.0" promptText="Конец" />
+      <TextField fx:id="orgTextField" layoutX="15.0" layoutY="415.0" prefHeight="26.0" prefWidth="122.0" promptText="Организатор" />
+      <TextField fx:id="statusTextField" layoutX="14.0" layoutY="450.0" prefHeight="26.0" prefWidth="122.0" promptText="Статус" />
+      <Button fx:id="addButton" layoutX="14.0" layoutY="488.0" mnemonicParsing="false" onAction="#setAddButton" prefHeight="26.0" prefWidth="122.0" text="Добавить" />
+      <Button fx:id="saveButton" layoutX="767.0" layoutY="538.0" mnemonicParsing="false" onAction="#setSaveButton" prefHeight="26.0" prefWidth="136.0" text="Сохранить" />
+      <TextArea fx:id="textArea" layoutX="153.0" layoutY="539.0" prefHeight="63.0" prefWidth="598.0" />
+      <TextField fx:id="keywordsTextField" layoutX="152.0" layoutY="78.0" prefHeight="26.0" prefWidth="890.0" promptText="Поиск по разделам, названию и организаторам..." />
+      <Button fx:id="orderButton" layoutX="767.0" layoutY="545.0" mnemonicParsing="false" onAction="#setToOrderButton" prefHeight="38.0" prefWidth="274.0" text="Оставить заявку" />
+      <CheckBox fx:id="checkBox" layoutX="887.0" layoutY="40.0" mnemonicParsing="false" onAction="#changeVisible" text="Режим администратора" />
+      <Label fx:id="label1" layoutX="24.0" layoutY="168.0" text="Добавить данные:" />
+      <Button fx:id="helpButton" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#setHelpButton" prefHeight="26.0" prefWidth="124.0" text="Помощь" />
+      <Label layoutX="181.0" layoutY="23.0" text="Сервис совместных покупок &quot;ПСП&quot;">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
